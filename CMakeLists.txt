@@ -157,6 +157,11 @@ if (VTK_ANDROID_BUILD)
   return()
 endif()
 
+option(VTK_WINRT_BUILD "Build VTK for WinRT (Angle is needed)" OFF)
+if (VTK_WINRT_BUILD)
+  return()
+endif()
+
 # some specific defaults for Andriod to give folks
 # a reasonable starting point
 if (ANDROID OR APPLE_IOS)
